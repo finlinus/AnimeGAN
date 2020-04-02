@@ -1,6 +1,7 @@
-tensorflow-gpu==2.1.0
-opencv-python==4.1.1.26
-lxml
+tensorflow-gpu==1.15.2
+opencv-python
+numpy
 tqdm
+argparse
 
 -e .
