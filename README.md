@@ -9,8 +9,8 @@ This is the Open source of the paper <AnimeGAN: a novel lightweight GAN for phot
 ___  
 
 ## Requirements  
-- python 3.6.8  
-- tensorflow-gpu 1.8  
+- python
+- tensorflow-gpu 1.15.2
 - opencv  
 - tqdm  
 - numpy  
