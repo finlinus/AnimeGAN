@@ -35,7 +35,7 @@ ___
   eg. `python main.py --phase test --dataset Hayao`  
   or `python test.py --checkpoint_dir checkpoint/AnimeGAN_Hayao_lsgan_300_300_1_3_10 --test_dir dataset/test/real --style_name H`  
   or for single image: `python cvt.py`  
-     for batch images in a folder: `python cvt_dir.py`  
+     for batch images in a folder: `python cvt_folder.py`  
      for video: `python cvt_video.py`  
   
 ____  
