@@ -1,5 +1,5 @@
 # AnimeGAN
-A Tensorflow implementation of AnimeGAN for fast photo animation  !!!
+A Tensorflow implementation of AnimeGAN for fast photo and video animation  !!!
   
 -----  
 This is the Open source of the paper <AnimeGAN: a novel lightweight GAN for photo animation>, which uses the GAN framwork to transform real-world photos into anime images.  
@@ -13,8 +13,7 @@ ___
 - tensorflow-gpu 1.15.2
 - opencv  
 - tqdm  
-- numpy  
-- glob  
+- numpy    
 - argparse  
   
 ## Usage  
@@ -32,9 +31,12 @@ ___
 ### 3. Train  
   eg. `python main.py --phase train --dataset Hayao --epoch 101 --init_epoch 1`  
   
-### 4. Test  
+### 4. Test/Convert  
   eg. `python main.py --phase test --dataset Hayao`  
-  or `python test.py --checkpoint_dir checkpoint/AnimeGAN_Hayao_lsgan_300_300_1_3_10 --test_dir dataset/test/real --style_name H`  
+  or `python test.py --checkpoint_dir checkpoint/AnimeGAN_Hayao_lsgan_300_300_1_3_10 --test_dir dataset/test/real --style_name H`
+  or for single image: `python cvt.py`
+     for batch images in a folder: `python cvt_dir.py`
+     for video: `python cvt_video.py`
   
 ____  
 ## Results  
@@ -58,5 +60,5 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/1%20(38).jpg) ![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo_result/1%20(38).jpg)  
 ____  
 ## Acknowledgment  
-This code is based on the [CartoonGAN-Tensorflow](https://github.com/taki0112/CartoonGAN-Tensorflow/blob/master/CartoonGAN.py) and [Anime-Sketch-Coloring-with-Swish-Gated-Residual-UNet](https://github.com/pradeeplam/Anime-Sketch-Coloring-with-Swish-Gated-Residual-UNet). Thanks to the contributors of this project.  
+This code is based on the [AnimeGAN](https://github.com/TachibanaYoshino/AnimeGAN), [CartoonGAN-Tensorflow](https://github.com/taki0112/CartoonGAN-Tensorflow/blob/master/CartoonGAN.py) and [Anime-Sketch-Coloring-with-Swish-Gated-Residual-UNet](https://github.com/pradeeplam/Anime-Sketch-Coloring-with-Swish-Gated-Residual-UNet). Thanks to the contributors of this project.  
 
